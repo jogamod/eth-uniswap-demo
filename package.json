@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "eth-to-dai-rinkeby": "node --experimental-modules ./EthToDaiRinkeby.mjs"
+    "eth-to-dai-rinkeby": "node --experimental-modules ./EthToDaiRinkeby.mjs",
+    "approve-dai-exchange-rinkeby": "node --experimental-modules ./approveDaiExchangeRinkeby.mjs",
+    "dai-to-eth-rinkeby": "node --experimental-modules ./DaiToEthRinkeby.mjs"
   },
   "dependencies": {
     "ethereumjs-tx": "^2.1.2",

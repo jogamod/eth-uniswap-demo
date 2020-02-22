@@ -1,0 +1,13 @@
+{
+  "name": "eth-uniswap-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "eth-to-dai-rinkeby": "node --experimental-modules ./EthToDaiRinkeby.mjs"
+  },
+  "dependencies": {
+    "ethereumjs-tx": "^2.1.2",
+    "web3": "^1.2.6"
+  }
+}

@@ -3,9 +3,9 @@ import { sendSignedTx, web3 } from './utils.mjs';
 
 const daiExchangeContract = new web3.eth.Contract(JSON.parse(daiExchangeAbi), daiExchangeAddress)
 
-const ETH_SOLD = web3.utils.toHex(50000000000000000); // 0.05ETH
+const ETH_SOLD = web3.utils.toHex(100000000000000000); // 0.1ETH
 const MIN_TOKENS = web3.utils.toHex(0.2 * 10 ** 18); // 0.2 DAI
-const DEADLINE = 1582393932;
+const DEADLINE = 1682393932;
 
 const exchangeEncodedABI = daiExchangeContract.methods.ethToTokenSwapInput(MIN_TOKENS, DEADLINE).encodeABI()
 

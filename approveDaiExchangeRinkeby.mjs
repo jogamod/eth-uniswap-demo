@@ -6,7 +6,7 @@ const daiTokenContract = new web3.eth.Contract(
     daiTokenAddress
   );
 
-  const TOKENS = web3.utils.toHex(1 * 10 ** 18); // 1 DAI
+  const TOKENS = web3.utils.toHex(2 * 10 ** 18); // 1 DAI
 
   const approveEncodedABI = daiTokenContract.methods.approve(daiExchangeAddress, TOKENS).encodeABI()
 
